@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{ragged2e}
+\geometry{a4paper, left=30mm, top=30mm, right=20mm, bottom=20mm}
+\title{Padawan 2021 - Módulo C\#}
+\date{2021\\ Maio}
+\author{Bruno Anhaia}
+\pagenumbering{arabic}
+
+\begin{document}
+
+\maketitle
+
+\section{Calculadora}
+\justifying
+Hirosberto, que está participando do Padawan, só sabe pensar em problemas matemáticos, por isso, para fixar seus conhecimentos na linguagem C\# e orientação a objetos decidiu criar uma calculadora com os seguintes requisitos:
+
+\begin{itemize}
+    \item O software deverá aceitar como entrada uma \textbf{única} string contendo dois números e um caractere utilizado como operador, separados por um único espaço entre eles, ou seja, no seguinte formato:
+
+          \begin{center}
+              numero \space\space operador \space\space numero;
+          \end{center}
+
+          Exemplo: 1 + 2
+
+    \item Deverá suportar as seguintes operações:
+
+          \begin{center}\begin{tabular}{c | c}
+                  \hline
+                  \textbf{Operação} & \textbf{Símbolo} \\
+                  \hline
+                  Adição            & +                \\
+                  Subtração         & -                \\
+                  Multiplicação     & *                \\
+                  Divisão           & /                \\
+                  \hline
+              \end{tabular}\end{center}
+
+    \item Ao receber uma entrada inválida o program deverá exibir a seguinte mensagem ``Entrada inválida, por favor insira uma entrada válida''.
+    \item O programa deverá ser executado até que seja inserida a string ``SAIR''.
+    \item As exceções deverão ser tratadas.
+    \item Os resultados deverão ser exibidos com 3 casas decimais de precisão.
+\end{itemize}
+
+Faça como Hirosberto, crie um programa com as mesmas funcionalidades.
+Veja abaixo alguns exemplos de entradas e saídas esperadas:
+
+\begin{center}
+    \begin{tabular}{c | c}
+        \hline
+        \textbf{Entrada} & \textbf{Saída}                                 \\
+        \hline
+        7.99 + 8.21      & 16.200                                         \\
+        1 - 100.4        & -99.400                                        \\
+        45.091 * 20.754  & 935.819                                        \\
+        1 / 3            & 0.333                                          \\
+        30.0 / 0         & ``Não é possível realizar a divisão por zero'' \\
+        Entrada vazia    & ``Entrada inválida, tente novamente''          \\
+        1.00+100         & ``Entrada inválida, tente novamente''          \\
+
+        \hline
+    \end{tabular}
+\end{center}
+
+\emph{Cada participante realizará uma aprensentação de seu projeto no último dia de curso e, após a apresentação, Enviar o projeto compactado no formato .zip para Bruno.Anhaia@fit-tecnologia.org.br ou via Zoom até o dia \textbf{07/05/2021.}}
+\end{document}
